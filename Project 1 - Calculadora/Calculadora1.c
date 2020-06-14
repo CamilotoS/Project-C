@@ -132,8 +132,6 @@ int main()
 				scanf("%d",&menu);
 				system("cls");
 			break;
-			case 5 :  
-			break;
 		}
 
 

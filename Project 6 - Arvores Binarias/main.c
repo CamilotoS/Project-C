@@ -98,8 +98,9 @@ void arvore_insere(int pai, char dado, int lado){
 }
 //Procura nó
 int arvore_procura(char dado){
+	int i;
     if (indice != 0){
-        for (int i = 0; i<indice; i++){
+        for (i = 0; i < indice; i++){
             if (arvore[i].dado == dado) {
                 return (i);
             }
@@ -111,7 +112,6 @@ int arvore_procura(char dado){
 }
 //Desenha o menu na tela
 void menu_mostrar(void){
-    system("cls");
     for (int i = 0; i < indice; i++){
         printf("| %c ",arvore[i].dado);
     }
